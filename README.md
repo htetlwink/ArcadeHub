@@ -104,45 +104,47 @@ When power is applied to the USB-C port, the board executes `main.py` automatica
 ### Page 1: Classic Games
 
 #### 1. 2048 Puzzle (`game_2048.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/ss2048.png" width="360" ></td>
-  </tr>
-</table>
+        
 - **Goal**: Slide tiles across a 4×4 grid to merge matching numbers until you create the **2048** tile.
 - **How to Play**:
   - **Swipe** in any of the 4 directions (**Up**, **Down**, **Left**, **Right**) on the touchscreen.
   - When two tiles with the same number collide during a swipe, they combine into one ($2+2=4$, $4+4=8$, etc.).
   - High score is automatically saved across games.
-
+    
+    <table>
+          <tr>
+            <td><img src="screenshots/ss2048.png" width="360" ></td>
+          </tr>
+    </table>
+    
 #### 2. Tic-Tac-Toe (`game_ttt.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/ssttt.png" width="360" ></td>
-  </tr>
-</table>
+   
 - **Goal**: Place 3 of your marks in a horizontal, vertical, or diagonal row.
 - **How to Play**:
   - Tap any open square on the 3×3 grid to place your **X** (Blue) or **O** (Red).
   - Play against a built-in **Minimax AI** opponent or in 2-Player pass-and-play mode.
+ 
+     <table>
+      <tr>
+        <td><img src="screenshots/ssttt.png" width="360" ></td>
+      </tr>
+    </table>
 
 #### 3. Connect 4 (`game_c4.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/ssc4.png" width="360" ></td>
-  </tr>
-</table>
+   
 - **Goal**: Connect four colored discs in a row (horizontal, vertical, or diagonal) on a 7×6 grid.
 - **How to Play**:
   - Tap any column header to drop your disc into that column.
   - Features gravity physics and animated disc drops against an AI opponent.
+ 
+     <table>
+      <tr>
+        <td><img src="screenshots/ssc4.png" width="360" ></td>
+      </tr>
+    </table>
 
 #### 4. UNO Card Game (`game_uno.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/ssuno.png" width="360" ></td>
-  </tr>
-</table>
+    
 - **Goal**: Be the first player to discard all cards from your hand against 3 AI opponents.
 - **How to Play**:
   - **Playing Cards**: Tap a card in your hand that matches the top discard pile by **Color**, **Number**, or **Action**.
@@ -153,98 +155,120 @@ When power is applied to the USB-C port, the board executes `main.py` automatica
     - **Draw Two (+2)**: Next player draws 2 cards and forfeits their turn.
     - **Wild (🌈)**: Play anytime; opens a touch popup to choose the active color (Red, Blue, Green, Yellow).
     - **Wild Draw Four (+4)**: Changes color and forces the next player to draw 4 cards.
+   
+      <table>
+      <tr>
+        <td><img src="screenshots/ssuno.png" width="360" ></td>
+      </tr>
+    </table>
 
 #### 5. Checkers / Draughts (`game_checkers.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/sschecker.png" width="360" ></td>
-  </tr>
-</table>
+    
 - **Goal**: Capture all opponent pieces or block them from making legal moves.
 - **How to Play**:
   - Tap your piece (highlighted in gold) to see valid target squares, then tap a destination.
   - Jump over opponent pieces into an empty square to capture. Mandatory multi-jumps are chained automatically.
   - Reaching the opponent's back row crowns your piece as a **King**, enabling diagonal movement and jumping backward.
+ 
+    <table>
+      <tr>
+        <td><img src="screenshots/sschecker.png" width="360" ></td>
+      </tr>
+    </table>
 
 #### 6. Standard Chess (`game_chess.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/sschess.png" width="360" ></td>
-  </tr>
-</table>
+    
 - **Goal**: Checkmate the opponent's King.
 - **How to Play**:
   - Tap a piece to highlight all legal move destinations, then tap the target square.
   - Supports all standard FIDE rules: Castling (kingside/queenside), En Passant, Pawn double-step, and Pawn Promotion (touch selector modal for Queen, Rook, Bishop, Knight).
   - Built-in Minimax evaluation AI with material and positional tables.
+ 
+    <table>
+      <tr>
+        <td><img src="screenshots/sschess.png" width="360" ></td>
+      </tr>
+    </table>
 
 ---
 
 ### Page 2: Strategy Games, Puzzles & Utilities
 
 #### 7. Alquerque - Orthogonal Mode (`game_alq.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/ssAlquerque.png" width="360" ></td>
-  </tr>
-</table>
+    
 - **Goal**: Ancient 5×5 Middle Eastern board game. Capture all opponent pieces.
 - **How to Play**:
   - Tap a piece, then tap an adjacent connected intersection along grid lines.
   - Capture opponent pieces by jumping over them into an empty point behind them.
   - Restricts movement to horizontal and vertical lines.
+ 
+    <table>
+      <tr>
+        <td><img src="screenshots/ssAlquerque.png" width="360" ></td>
+      </tr>
+    </table>
 
 #### 8. Alquerque - Full Diagonal Mode (`game_alq_full.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/ssAlquerquefull.png" width="360" ></td>
-  </tr>
-</table>
+    
 - **Goal**: Full-board variant of Alquerque on a 5×5 lattice with 12 pieces per player.
 - **How to Play**:
   - Supports diagonal movement and captures across all marked diagonal lines on the board.
+ 
+    <table>
+      <tr>
+        <td><img src="screenshots/ssAlquerquefull.png" width="360" ></td>
+      </tr>
+    </table>
 
 #### 9. Dots & Boxes (`game_dots.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/ssdotnbox.png" width="360" ></td>
-  </tr>
-</table>
+    
 - **Goal**: Complete the 4th side of 1×1 square boxes to claim territory and score points.
 - **How to Play**:
   - Tap the gap between two adjacent dots to draw a line.
   - Completing a square box fills it with your color and awards you an **extra turn**.
   - The player with the most boxes when the grid is full wins.
+ 
+    <table>
+      <tr>
+        <td><img src="screenshots/ssdotnbox.png" width="360" ></td>
+      </tr>
+    </table>
 
 #### 10. Dots & Triangles (`game_tri_dots.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/ssdotntri.png" width="360" ></td>
-  </tr>
-</table>
+   
 - **Goal**: Connect dots on a triangular lattice grid to complete triangles.
 - **How to Play**:
   - Tap between adjacent dots on the triangular grid to connect edges.
   - Completing a 3-sided triangle claims the area and awards an extra move.
+ 
+     <table>
+      <tr>
+        <td><img src="screenshots/ssdotntri.png" width="360" ></td>
+      </tr>
+    </table>
 
 #### 11. Alquerque Solver & Analyzer (`game_alq_solver.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/ssAlquerquesolver.png" width="360" ></td>
-  </tr>
-</table>
+   
 - **Goal**: Real-time AI game-tree solver and analysis tool.
 - **How to Play**:
   - Setup custom board positions and view real-time minimax evaluations, depth search metrics, and optimal suggested moves.
+ 
+     <table>
+      <tr>
+        <td><img src="screenshots/ssAlquerquesolver.png" width="360" ></td>
+      </tr>
+    </table>
 
 #### 12. Scoreboard & Statistics Dashboard (`main.py`)
-<table>
-  <tr>
-    <td><img src="screenshots/sssboard.png" width="360" ></td>
-  </tr>
-</table>
+   
 - **Overview**: Displays cumulative win/loss/draw records and high scores across all games loaded from `stats.json`.
 - Tap **CLEAR ALL STATS** at the bottom to reset all records.
+
+   <table>
+      <tr>
+        <td><img src="screenshots/sssboard.png" width="360" ></td>
+      </tr>
+    </table>
 
 ---
 
